@@ -13,6 +13,8 @@ const phrases = [
     "Be Our Guest"
 ];
 
+// Listens for start game button to be pressed
+
 startGame.addEventListener('click', () => {
     overlay.style.display = 'none';
 });
