@@ -33,13 +33,13 @@ const addPhraseToDisplay = arr => {
         const li = document.createElement('li');
         li.textContent = arr[i];
 
-        if (li.textContent === '') {
+        if (li.textContent === ' ') {
             li.className = 'space';
         } else {
             li.className = 'letter';
         }
-    const letter = document.querySelector('ul');
-    letter.appendChild(li);
+    const lettering = document.querySelector('ul');
+    lettering.appendChild(li);
 }
     
 }
@@ -82,12 +82,12 @@ keyboard.addEventListener('click', (e) => {
 
 // checks if game was won or lost
 const checkWin = () => {
-    const letter = document.getElementsByClassName('letter');
+    const lettering = document.getElementsByClassName('letter');
     const show = document.getElementsByClassName('show');
     const overlay = document.getElementById('overlay');
 
 
-    if (letter.length === show.length) {
+    if (lettering.length === show.length) {
         startGame.classList.replace('start', 'win');
         overlay.style = 'display';
         startGame.display = 'flex';
