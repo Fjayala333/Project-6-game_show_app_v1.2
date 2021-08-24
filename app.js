@@ -6,7 +6,7 @@ const lives = document.querySelectorAll('tries');
 const phrases = [
     "Let It Go",
     "Show Yourself",
-    "You're Welcome",
+    "Your Welcome",
     "Un Poco Loco",
     "Be Our Guest"
 ];
@@ -88,7 +88,7 @@ const checkWin = () => {
 
 
     if (lettering.length === show.length) {
-        startGame.classList.replace('start', 'win');
+        overlay.classList.replace('start', 'win');
         overlay.style = 'display';
         startGame.display = 'flex';
         document.querySelector('h2').innerHTML = 'You Win!';
@@ -96,7 +96,7 @@ const checkWin = () => {
     }
 
     if (missed === 5) {
-        startGame.classList.replace('start', 'lose')
+        overlay.classList.replace('start', 'lose')
         overlay.style = 'display';
         startGame.display = 'flex';
         document.querySelector('h2').innerHTML = 'You Lose!';
