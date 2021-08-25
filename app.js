@@ -88,7 +88,7 @@ const checkWin = () => {
 
 
     if (lettering.length === show.length) {
-        overlay.className.replace('start', 'win');
+        overlay.classList.replace('start', 'win');
         overlay.style = 'display';
         startGame.display = 'flex';
         document.querySelector('h2').innerHTML = 'You Win!';
@@ -96,7 +96,7 @@ const checkWin = () => {
     }
 
     if (missed === 5) {
-        overlay.className.replace('start', 'lose')
+        overlay.classList.replace('start', 'lose')
         overlay.style = 'display';
         startGame.display = 'flex';
         document.querySelector('h2').innerHTML = 'You Lose!';
